@@ -1,11 +1,10 @@
 import "./App.css";
-import Formi from './Formi'
+import SellerForm from "./Business";
 
 function App() {
   return (
     <div className="App">
-      <Formi/>
-
+      <SellerForm />
     </div>
   );
 }
