@@ -63,7 +63,11 @@ const ProductForm = () => {
     };
 
     axios
-      .post("http://localhost:3040/api/product", formData, config)
+      .patch(
+        "http://localhost:3040/api/product/64948dd609288de787470694",
+        formData,
+        config
+      )
       .then((response) => {
         console.log("Product successfully submitted:", response.data);
         // Do something with the response if needed
